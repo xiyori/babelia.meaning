@@ -1,0 +1,10 @@
+What manual page do you want?
+For example, try 'help help'.
+
+[36mAvailable commands:[0m
+[32mhelp[0m: access command manuals
+[32mlist[0m: display library
+[32mopen[0m: load image or bookmark
+[32mbookmark[0m: save results
+[32mremove[0m: delete bookmarks
+[32mexit[0m: stop application

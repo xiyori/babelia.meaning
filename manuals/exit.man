@@ -1,0 +1,10 @@
+EXIT                                             Application Commands
+
+NAME
+       [32mexit[0m - stop application
+
+SYNTAX
+       [[32mexit[0m]
+
+DESCRIPTION
+       Exit app.

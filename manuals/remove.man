@@ -1,0 +1,13 @@
+REMOVE                                           Bookmark Commands
+
+NAME
+       [32mremove[0m - delete bookmarks
+
+SYNTAX
+       {[32mremove[0m | [32mrm[0m} [[31mNAME[0m]... [[31mOPTION[0m]
+
+DESCRIPTION
+       Permanently delete bookmark/s from disk.
+
+       [36m-a[0m, [36m--all[0m
+              delete all bookmarks currently in the library (no undo!)

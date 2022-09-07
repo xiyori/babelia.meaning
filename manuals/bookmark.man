@@ -1,0 +1,16 @@
+BOOKMARK                                         Bookmark Commands
+
+NAME
+       [32mbookmark[0m - save results
+
+SYNTAX
+       {[32mbookmark[0m | [32mbm[0m} [31mNAME[0m [[31mOPTION[0m]
+
+DESCRIPTION
+       Save the most recent editor results to the specified bookmark file. Use asap after closing the editor. The command can be called several times to create bookmarks with/without optimization.
+
+       [36m-o[0m, [36m--optimize[0m, [36m-m[0m=[32mo[0m, [36m--mode[0m=[32moptimize[0m, ...
+              Perform stroke optimization using graph algorithm. Perfect for merging several connected strokes into one continuous line.
+
+       [36m-p[0m, [36m--preserve[0m, [36m-m[0m=[32mp[0m, [36m--mode[0m=[32mpreserve[0m, ...
+              Leave strokes as is (the default). Allows for carefully preplanned drawings.

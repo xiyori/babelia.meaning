@@ -1,0 +1,10 @@
+HELP                                             Application Commands
+
+NAME
+       [32mhelp[0m - access command manuals
+
+SYNTAX
+       {[32mhelp[0m | [32mman[0m} [[31mCOMMAND[0m]
+
+DESCRIPTION
+       List all available commands. If an argument is provided, display specific command manual page.

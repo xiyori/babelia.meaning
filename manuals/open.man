@@ -1,0 +1,43 @@
+OPEN                                             Editor Commands
+
+NAME
+       [32mopen[0m - load image or bookmark
+
+SYNTAX
+       [[32mopen[0m] [31mFILENAME[0m [[31mOPTION[0m]...
+
+DESCRIPTION
+       Load image or bookmark using the provided filename or library index. File extension can be omitted. Several editing modes are available through options. Use 'Esc' to leave editor and [32mbookmark[0m command to save the results.
+
+       [36m-n[0m, [36m--normal[0m, [36m-m[0m=[32mn[0m, [36m--mode[0m=[32mnormal[0m, ...
+              Perform nearest point walk using only pixels of the same color with mouse position as a starting point (the default). Left click to lock the result in place, click again to unlock.
+
+       [36m-f[0m, [36m--fast[0m, [36m-m[0m=[32mf[0m, [36m--mode[0m=[32mfast[0m, ...
+              Perform nearest point walk without animations. Left click to lock the result in place, click again to unlock.
+
+       [36m-d[0m, [36m--draw[0m, [36m-m[0m=[32md[0m, [36m--mode[0m=[32mdraw[0m, ...
+              Draw lines using pixels of the same color. Left click to select color, drag mouse pointer around with the left button pressed to create a stroke. Drag a line backwards through the most recent point to unstick it. Press 'Z' to undo the stroke, 'Y' to redo, 'D' to clear all strokes and deselect color (no undo!).
+
+       [36m-b[0m, [36m--bookmark[0m, [36m-m[0m=[32mb[0m, [36m--mode[0m=[32mbookmark[0m, ...
+              Display bookmark contents. This option is set automatically if a bookmark with the given filename or index is detected. Left click to edit bookmark in draw mode.
+
+       [31m--METRIC_NAME[0m, [36m--metric[0m={[32ml1[0m | [32ml2[0m | [32mlinf[0m | [32mcos[0m}
+              Metric to use in the nearest point walk (default [32ml2[0m). Play around and see what results each metric yields.
+
+       [36m-c[0m=[31mX,Y[0m, [36m--coords[0m=[31mX,Y[0m
+              Set starting point coordinates for the nearest point walk manually. In draw mode select pixels with the same color as the starting one.
+
+       [36m-i[0m, [36m--intersect[0m
+              Allow line self-intersections in the nearest point walk. This setting forces the process to utilize all the available pixels of the same color.
+
+       [36m--speed[0m=[31mSPEED[0m
+              Set bookmark animation speed in range 0.1-10 (default [31m1[0m).
+
+       [36m-p[0m, [36m--points_disable[0m
+              Do not highlight points in bookmark mode.
+
+       [36m--scale[0m=[31mSCALE[0m
+              Set image scaling in range 1-10 (default [32mauto[0m).
+
+       [36m-t[0m=[31mMILLISECONDS[0m, [36m--time_limit[0m=[31mMILLISECONDS[0m
+              Set time limit for the nearest point walk computation (default [31m500[0m). This is an advanced setting, increase only if timeout error is encountered.

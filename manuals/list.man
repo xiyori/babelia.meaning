@@ -1,0 +1,19 @@
+LIST                                             User Commands
+
+NAME
+       [32mlist[0m - display library
+
+SYNTAX
+       {[32mlist[0m | [32mls[0m} [[31mOPTION[0m]
+
+DESCRIPTION
+       Reload library and list all existing bookmarks and/or images. Useful to add new image or bookmark to the library index in runtime.
+
+       [36m-b[0m, [36m--bookmarks[0m
+              display bookmarks library
+
+       [36m-i[0m, [36m--images[0m
+              display images library
+
+       [36m-a[0m, [36m--all[0m
+              display full library (the default)
