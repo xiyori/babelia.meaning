@@ -3,7 +3,8 @@ Babel image library meaning search tool built upon OpenCV framework.
 
 The main idea is to select pixels with the same color from a babelia image. Then a line pattern can be automatically generated or manually drawn using the selected pixels as end points.
 
-![alt text](https://i.imgur.com/CmVvhVF.gif)
+[![alt text](https://i.imgur.com/eaNz7NA.gif)](https://imgur.com/a/0tWv151)
+<sub>(GIF is clickable)</sub>
 
 **Key features**
 
