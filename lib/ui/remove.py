@@ -1,10 +1,9 @@
-from lib import utils
-from lib.utils import get_bookmarks, get_bookmark_name, \
+from lib.utils import get_bookmarks, get_bookmark_name, remove_bookmark, \
     print_lib, enclose_quotes, print_exception, print_red
 from lib.command import Command, RemoveParser
 
 
-def remove_bookmark(response: Command):
+def remove(response: Command):
     """
     Remove bookmark command interface.
 
@@ -46,7 +45,7 @@ def remove_bookmark(response: Command):
         removed = []
         for bmkname in bmknames:
             try:
-                utils.remove_bookmark(bmkname)
+                remove_bookmark(bmkname)
                 removed.append(bmkname)
             except BaseException:
                 print_red(f"Cannot delete \"{bmkname}\"!")

@@ -96,14 +96,14 @@ def open_bookmark(filename: str) -> tuple:
 
 
 def save_bookmark(bmkname: str, imgname: str,
-                  strokes: Sequence[Sequence]):
+                  strokes: Sequence[Sequence[Point2D]]):
     """
     Save bookmark to disk.
 
     Args:
         bmkname (str): Bookmark name.
         imgname (str): Bookmark image name.
-        strokes (:obj:`Sequence` of :obj:`Sequence`):
+        strokes (:obj:`Sequence` of :obj:`Sequence` of :obj:`Point2D`):
             List of strokes to save.
 
     """

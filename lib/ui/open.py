@@ -50,7 +50,7 @@ def open(response: Command) -> Optional[tuple]:
     Returns:
         :obj:`str`, optional: Opened image filename without
             the file extension.
-        :obj:`list` of :obj:`list`, optional: List of strokes.
+        :obj:`list` of :obj:`list` of :obj:`Point2D`, optional: List of strokes.
 
     """
     global imgname, mode, metric, allow_intersections, time_limit, \
@@ -102,9 +102,12 @@ def open(response: Command) -> Optional[tuple]:
         metric.p_center = Point2D(img.shape[1], img.shape[0]) // 2
 
     # Scale UI according to monitor resolution
-    if scale is None:
-        scale = max(1, min(monitor_info.work_h // img.shape[0],
+    max_scale = max(1, min(monitor_info.work_h // img.shape[0],
                            monitor_info.work_w // img.shape[1]))
+    if scale is None:
+        scale = max_scale
+    else:
+        scale = min(scale, max_scale)
     A.scale = scale
     A.line_thickness = scale + scale // 5
     A.border_thickness = scale - scale * 3 // 5

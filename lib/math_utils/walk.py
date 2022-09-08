@@ -26,7 +26,8 @@ def walk(img: np.ndarray, p_start: Point2D,
             Defaults to 500 ms.
 
     Returns:
-        list: A sequence of points visited in the walk.
+        :obj:`list` of :obj:`Point2D`: A sequence of points visited
+            in the walk.
 
     """
     start_time = perf_counter_ns() // 1000000

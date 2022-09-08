@@ -1,21 +1,24 @@
 import sys
 import colorama
 
+from typing import Sequence
+
 from lib import ui
+from lib.math_utils import Point2D
 from lib.utils import get_bookmarks, get_images, print_lib, print_red
 from lib.enums import CommandNames
 from lib.command import Command
 
 
-colorama.init()  # Init colored console output
+imgname: str = None                          #: Last opened image name.
+strokes: Sequence[Sequence[Point2D]] = None  #: The most recent editing results.
 
 argv = sys.argv
 
+colorama.init()  # Init colored console output
+
 print_lib(get_bookmarks(), "bookmark", suff="b")
 print_lib(get_images(), "image")
-
-imgname = None
-strokes = None
 
 while True:
     if len(argv) > 1:
@@ -39,9 +42,9 @@ while True:
             print_red("Nothing to bookmark!")
             continue
 
-        ui.save_bookmark(response, imgname, strokes)
+        ui.bookmark(response, imgname, strokes)
     elif response.name in CommandNames.remove.value:
-        ui.remove_bookmark(response)
+        ui.remove(response)
     else:
         if response.name not in CommandNames.open.value:
             response.name = CommandNames.open.value[0]

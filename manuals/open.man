@@ -37,7 +37,7 @@ DESCRIPTION
               Do not highlight points in bookmark mode.
 
        [36m--scale[0m=[31mSCALE[0m
-              Set image scaling in range 1-10 (default [32mauto[0m).
+              Set image scaling (integer >=1, default [32mauto[0m).
 
        [36m-t[0m=[31mMILLISECONDS[0m, [36m--time_limit[0m=[31mMILLISECONDS[0m
               Set time limit for the nearest point walk computation (default [31m500[0m). This is an advanced setting, increase only if timeout error is encountered.

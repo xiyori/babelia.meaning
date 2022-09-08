@@ -1,22 +1,21 @@
 from typing import Sequence
 
-from lib import utils
-from lib.utils import get_bookmarks, bookmark_exists, \
+from lib.utils import get_bookmarks, bookmark_exists, save_bookmark, \
     print_lib, print_exception, print_red, print_cyan
-from lib.math_utils import optimize_strokes
+from lib.math_utils import Point2D, optimize_strokes
 from lib.command import Command, BookmarkParser
 from lib.enums import BookmarkMode
 
 
-def save_bookmark(response: Command, imgname: str,
-                  strokes: Sequence[Sequence]):
+def bookmark(response: Command, imgname: str,
+             strokes: Sequence[Sequence[Point2D]]):
     """
     Save bookmark command interface.
 
     Args:
         response (Command): User command.
         imgname (str): Bookmark image name.
-        strokes (:obj:`Sequence` of :obj:`Sequence`):
+        strokes (:obj:`Sequence` of :obj:`Sequence` of :obj:`Point2D`):
             List of strokes to save.
 
     """
@@ -40,6 +39,11 @@ def save_bookmark(response: Command, imgname: str,
 
     if mode == BookmarkMode.OPTIMIZE:
         strokes = optimize_strokes(strokes)
-    utils.save_bookmark(bmkname, imgname, strokes)
+
+    try:
+        save_bookmark(bmkname, imgname, strokes)
+    except BaseException as e:
+        print_red(f"Cannot save \"{bmkname}\"!")
+        print_exception(e)
 
     print_lib(get_bookmarks(reload=True), "bookmark", suff="b")
