@@ -7,7 +7,7 @@ SYNTAX
        [[32mopen[0m] [31mFILENAME[0m [[31mOPTION[0m]...
 
 DESCRIPTION
-       Load image or bookmark using the provided filename or library index. File extension can be omitted. Several editing modes are available through options. Use 'Esc' to leave editor and [32mbookmark[0m command to save the results.
+       Load image or bookmark using the provided filename or library index. File extension can be omitted. Several editing modes are available through options. Press 'Esc' to leave the editor. Use [32mbookmark[0m/[32mexport[0m to save the results.
 
        [36m-n[0m, [36m--normal[0m, [36m-m[0m=[32mn[0m, [36m--mode[0m=[32mnormal[0m, ...
               Perform nearest point walk using only pixels of the same color with mouse position as a starting point (the default). Left click to lock the result in place, click again to unlock.

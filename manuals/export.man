@@ -1,0 +1,22 @@
+EXPORT                                           IO Commands
+
+NAME
+       [32mexport[0m - export results
+
+SYNTAX
+       {[32mexport[0m | [32mexp[0m} [31mFILENAME[0m [[31mOPTION[0m]...
+
+DESCRIPTION
+       Export the most recent editor results to a PNG image. Use asap after closing the editor. The command can be called several times to create images with various styles.
+
+       [36m--scale[0m=[31mSCALE[0m
+              Set image scaling (integer >=1, default [31m5[0m).
+
+       [36m-c[0m=[31mR,G,B[0m, [36m--coords[0m=[31mR,G,B[0m
+              Set line color in range 0-255 (default [31m0,0,0[0m (black)).
+
+       [36m--thickness[0m=[31mPIXELS[0m
+              Set line thickness (integer >=1, default [32mauto[0m).
+
+       [36m-t[0m, [36m--transparent[0m
+              Use transparent background.

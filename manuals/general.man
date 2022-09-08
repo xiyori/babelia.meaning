@@ -7,4 +7,5 @@ For example, try 'help help'.
 [32mopen[0m: load image or bookmark
 [32mbookmark[0m: save results
 [32mremove[0m: delete bookmarks
+[32mexport[0m: export results
 [32mexit[0m: stop application
