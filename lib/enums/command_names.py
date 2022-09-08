@@ -12,4 +12,5 @@ class CommandNames(Enum):
     list =     ["list", "ls"]
     bookmark = ["bookmark", "bm"]
     remove =   ["remove", "rm"]
+    export =   ["export", "exp"]
     open =     ["open"]

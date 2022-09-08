@@ -40,11 +40,15 @@ while True:
     elif response.name in CommandNames.bookmark.value:
         if strokes is None:
             print_red("Nothing to bookmark!")
-            continue
-
-        ui.bookmark(response, imgname, strokes)
+        else:
+            ui.bookmark(response, imgname, strokes)
     elif response.name in CommandNames.remove.value:
         ui.remove(response)
+    elif response.name in CommandNames.export.value:
+        if strokes is None:
+            print_red("Nothing to export!")
+        else:
+            ui.export(response, imgname, strokes)
     else:
         if response.name not in CommandNames.open.value:
             response.name = CommandNames.open.value[0]

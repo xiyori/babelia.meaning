@@ -1,5 +1,7 @@
 from .base import *
+from .base_int_pos import *
 from .bookmark import *
+from .color import *
 from .coords import *
 from .intersect import *
 from .list import *
@@ -9,4 +11,6 @@ from .points import *
 from .remove import *
 from .scale import *
 from .speed import *
+from .thickness import *
 from .time_limit import *
+from .transparent import *
