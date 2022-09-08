@@ -84,7 +84,7 @@ To save the results close the editor window and run:
 > bookmark my_drawing
 ```
 
-Bookmark can be viewed by simply entering its index or name:
+A bookmark can be viewed by simply entering its index or name:
 
 ```
    0b - "example", 1b - "my_drawing"
