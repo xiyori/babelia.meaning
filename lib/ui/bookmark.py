@@ -42,8 +42,7 @@ def bookmark(response: Command, imgname: str,
 
     try:
         save_bookmark(bmkname, imgname, strokes)
+        print_lib(get_bookmarks(reload=True), "bookmark", suff="b")
     except BaseException as e:
         print_red(f"Cannot save \"{bmkname}\"!")
         print_exception(e)
-
-    print_lib(get_bookmarks(reload=True), "bookmark", suff="b")
