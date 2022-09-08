@@ -109,7 +109,7 @@ Leave the app by entering an empty command:
 Program finished.
 ```
 
-Have fun!
+Have fun and remember that the only way you find meaningful art in these libraries is by making it yourself.
 
 ## TODO
 + Export animations to mp4/gif
