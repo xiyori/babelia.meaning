@@ -20,8 +20,8 @@ def walk(img: np.ndarray, p_start: Point2D,
         p_start (Point2D): Starting point for the walk.
         metric (metrics.BaseMetric): Metric to measure the distance
             between points. Defaults to metrics.L2Metric.
-        allow_intersections (bool): Allow line self-intersections.
-            Defaults to False.
+        allow_intersections (bool): Whether to allow line
+            self-intersections. Defaults to False.
         time_limit (int): Time limit for the computations in ms.
             Defaults to 500 ms.
 

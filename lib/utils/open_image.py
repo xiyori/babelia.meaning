@@ -15,7 +15,7 @@ def get_images(reload: bool = False) -> list:
     Get images library.
 
     Args:
-        reload (bool): Reload library from disk.
+        reload (bool): Whether to reload library from disk.
             Defaults to False.
 
     Returns:

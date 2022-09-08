@@ -15,7 +15,7 @@ def get_bookmarks(reload: bool = False) -> list:
     Get bookmarks library.
 
     Args:
-        reload (bool): Reload library from disk.
+        reload (bool): Whether to reload library from disk.
             Defaults to False.
 
     Returns:
