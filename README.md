@@ -1,5 +1,5 @@
 # babelia.meaning
-[Babel image archives](https://babelia.libraryofbabel.info/) meaning search tool built upon OpenCV framework.
+Meaning search tool for the [babel image archives](https://babelia.libraryofbabel.info/) built upon OpenCV framework.
 
 The main concept is to select pixels with the same color from a babelia image. Then the selected pixels coordinates can be used to automatically generate or manually draw line patterns.
 
@@ -8,7 +8,7 @@ The main concept is to select pixels with the same color from a babelia image. T
 
 Babelia images consist of 4096 colors and have a resolution of 640 $\times$ 416, which means there are approximately 65 pixels of each color in a typical image from the universal slide show. While it is a small number, it is just enough to create simple drawings. On the other hand, finding the right configuration is still a somewhat challenging task, so it doesn't reduce things to simply drawing anything you want over the original image.
 
-However, in case such arguments don't seem convincing to you, there's always an automatic mode for the fans of interpreting the true randomness.
+However, in case such arguments don't seem convincing to you, the app provides plenty of automatic regimes for the fans of interpreting the true randomness.
 
 **Key features**
 
