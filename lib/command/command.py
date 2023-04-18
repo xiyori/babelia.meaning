@@ -81,16 +81,16 @@ class Command(list):
                 Command option parsers.
             n_args (:obj:`int`, optional): Maximum number of plain arguments.
                 Defaults to 1. If set to None, any number of arguments
-                that cannot be interperted as options is allowed.
+                that cannot be interpreted as options is allowed.
             return_toggled (bool): Whether to return an array indicating
-                which parsers succesfully processed an option.
+                which parsers successfully processed an option.
                 Defaults to False.
 
         Returns:
             list: Parsed option values.
             list: Plain arguments in the order of appearance.
             :obj:`list`, optional: Boolean array indicating which parsers
-                succesfully processed an option.
+                successfully processed an option.
 
         Raises:
             ValueError: If more than `n_args` arguments cannot

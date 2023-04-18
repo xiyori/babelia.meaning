@@ -29,7 +29,7 @@ Then run the command:
 
 `pip install -r requirements.txt`
 
-If you are using Anaconda, run the following commands:
+If you use Anaconda, run the following commands:
 
 `conda create --name babelia --file requirements_conda.txt`\
 `conda activate babelia`\

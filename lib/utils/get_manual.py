@@ -5,13 +5,13 @@ manuals_dir = "manuals/"
 _manuals = dict()
 
 
-def get_manual(name: str = "general") -> str:
+def get_manual(name: str = "common") -> str:
     """
     Get command manual.
 
     Args:
         name (str): Command manual name.
-            Defaults to "general".
+            Defaults to "common".
 
     Returns:
         str: Command manual.
