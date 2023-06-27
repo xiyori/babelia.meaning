@@ -82,7 +82,7 @@ class BaseAnimation(ABC):
     @abstractmethod
     def _phi(self, dt: int) -> float:
         """
-        Phi function used to vary the animation speed.
+        Tweak the speed of animation.
             phi: [0, duration] -> [a, b]
             a <= 0, b >= 1
 
